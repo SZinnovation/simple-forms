@@ -1,0 +1,96 @@
+---
+- type: vas
+  id: D1
+  en:
+    question: How Clear-headed do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、意識がはっきりしていますか
+    range_labels: [全くはっきりしていない, とてもはっきりしている]
+
+- type: vas
+  id: D2
+  en:
+    question: Is you Brain working smoothly NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、頭の回転がスムーズですか？
+    range_labels: [全くスムーズでない, とてもスムーズである]
+
+- type: vas
+  id: D3
+  en:
+    question: How Sleepy do yo feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、眠いですか？
+    range_labels: [全く眠くない, とても眠い]
+
+- type: vas
+  id: D4
+  en:
+    question: How Happy do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、幸せですか？
+    range_labels: [全く幸せでない, とても幸せである]
+
+- type: vas
+  id: D5
+  en:
+    question: How Sad do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、悲しいですか？
+    range_labels: [全く悲しくない, とても悲しい]
+
+- type: vas
+  id: D6
+  en:
+    question: How Nervous/tense do yo feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、緊張していますか？
+    range_labels: [全く緊張していない, とても緊張している]
+
+- type: vas
+  id: D7
+  en:
+    question: How Settled/calm do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、落ち着いていますか？
+    range_labels: [全く落ち着いていない, とても落ち着いている]
+
+- type: vas
+  id: D8
+  en:
+    question: How much of an effort is it to do anything NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、何かをする（注：どんなことでもかまいません）としたら、大変だと感じますか？
+    range_labels: [全く大変と感じない, とても大変と感じる]
+
+- type: vas
+  id: D9
+  en:
+    question: How Tired do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、疲れていますか？
+    range_labels: [全く疲れていない, とても疲れている]
+
+- type: vas
+  id: D19
+  en:
+    question: Are you satisfied with your recent work (since the last question)?
+    range_labels: [very little, very much]
+
+- type: vas
+  id: D10
+  en:
+    question: Do you think you can achieve good results NOW (since the last question)?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、（前と比べ）よりよい結果を出せると思いますか？
+    range_labels: [全くそう思わない, とてもそう思う]
