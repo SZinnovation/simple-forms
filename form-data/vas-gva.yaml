@@ -5,7 +5,7 @@
     question: How Clear-headed do you feel NOW?
     range_labels: [very little, very much]
   jp:
-    question: 今、意識がはっきりしていますか
+    question: 今、意識がはっきりしていますか？
     range_labels: [全くはっきりしていない, とてもはっきりしている]
 
 - type: vas
