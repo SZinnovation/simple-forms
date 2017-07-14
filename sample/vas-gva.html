@@ -38,9 +38,9 @@
     <!-- This ONLY has to render nicely on a 800 x 1280 screen (for now) - our tablets -->
     <div class="container-fluid">
       <h1>夏ゼミ 2017 アンケート</h1>
-      <p>以下の質問に回答してください。回答後は送信ボタンを押してください。</p>
+      <p>スライダー上をクリックして、以下の質問に回答してください。<br>回答後は送信ボタンを押してください。</p>
       <hr>
-      <form action="/vas-gva" method="post">
+      <form method="get" action="vas-gva-thanks.html">
           <div class="form-group form-inline">
             <label for="sz-id" class="sz-id-label">湘ゼミID </label>
             <input type="text" class="form-control" id="sz-id">
@@ -105,7 +105,7 @@
               <span class="ans left-label pull-left">全くそう思わない</span>
               <span class="ans right-label pull-right">とてもそう思う</span>
           </div>
-          <button type="button" class="btn btn-success btn-lg btn-block">送信</button>
+          <button type="button submit" class="btn btn-success btn-lg btn-block">送信</button>
 
       </form>
     </div>
@@ -124,9 +124,9 @@
 
     <script>
         var clickIt = function(e){
-            $(this).removeClass('not-clicked'); 
+            $(this).removeClass('not-clicked');
             // necessary! Otherwise, stays transparent
-            $(this).addClass('clicked'); 
+            $(this).addClass('clicked');
         }
 
         // Is it possible to add one handler for both?

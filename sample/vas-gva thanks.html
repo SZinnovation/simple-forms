@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Natsu Zemi 2017 Sample Form</title>
+
+    <!-- Standard Bootstrap 3 CDN: CSS and theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous"> -->
+
+    <!-- Bootstrap 3 for Japanese Websites (Honoka) -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="vas-gva-style.css">
+
+</head>
+<body>
+    <!-- This ONLY has to render nicely on a 800 x 1280 screen (for now) - our tablets -->
+    <div class="container-fluid">
+      <h1>アンケート送信完了</h1>
+      <p>夏ゼミ 2017 アンケートへのご協力、ありがとうございます！</p>
+
+    </div>
+
+    <!-- Standard jQuery 3 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Standard Bootstrap 3 CDN: CSS and theme -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+<<<<<<< Updated upstream
+        var clickIt = function(e){
+            $(this).removeClass('not-clicked');
+            // necessary! Otherwise, stays transparent
+            $(this).addClass('clicked');
+        }
+
+        // Is it possible to add one handler for both?
+        $('.not-clicked').on('touchstart', clickIt);
+        $('.not-clicked').click(clickIt);
+=======
+        $('.not-clicked').click(function(e){
+        $(this).removeClass('not-clicked');
+        // necessary!
+        $(this).addClass('clicked');
+        });
+>>>>>>> Stashed changes
+    </script>
+</body>
