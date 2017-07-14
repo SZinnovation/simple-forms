@@ -28,6 +28,8 @@
 
         input.clicked::-webkit-slider-thumb {
             -webkit-appearance: sliderthumb-horizontal;
+            /* This is a hack to deal with the fact that the thumb is rendered transparent */
+            background: black;
         }
     </style>
 
@@ -45,7 +47,7 @@
           </div>
           <div class="vas form-group" id="D1">
               <label class="question">今、意識がはっきりしていますか？</label>
-              <input type="range" id="D1" min="0" max="100" step="1">
+              <input class="not-clicked" type="range" id="D1" min="0" max="100" step="1">
               <span class="ans left-label pull-left">全くはっきりしていない</span>
               <span class="ans right-label pull-right">とてもはっきりしている</span>
           </div>
