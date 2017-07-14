@@ -123,12 +123,14 @@
     </script>
 
     <script>
-        // Note that this is problematic with Windows 10 devices with touchscreens...
-        var clickEvent = ((document.ontouchstart!==null) ? 'click' : 'touchstart');
-        $('.not-clicked').on(clickEvent, function(e){
-        $(this).removeClass('not-clicked'); 
-        // necessary!
-        $(this).addClass('clicked'); 
-        });
+        var clickIt = function(e){
+            $(this).removeClass('not-clicked'); 
+            // necessary! Otherwise, stays transparent
+            $(this).addClass('clicked'); 
+        }
+
+        // Is it possible to add one handler for both?
+        $('.not-clicked').on('touchstart', clickIt);
+        $('.not-clicked').click(clickIt);
     </script>
 </body>
