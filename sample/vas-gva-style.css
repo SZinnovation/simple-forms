@@ -77,3 +77,6 @@ label {
   color: #777;
   font-size: 80%;
 }
+.sz-id-label {
+  margin-right: 10px;
+}
