@@ -123,7 +123,9 @@
     </script>
 
     <script>
-        $('.not-clicked').bind('pointerdown', function(e){
+        // Note that this is problematic with Windows 10 devices with touchscreens...
+        var clickEvent = ((document.ontouchstart!==null) ? 'click' : 'touchstart');
+        $('.not-clicked').on(clickEvent, function(e){
         $(this).removeClass('not-clicked'); 
         // necessary!
         $(this).addClass('clicked'); 
