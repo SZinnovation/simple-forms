@@ -62,9 +62,11 @@
 
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
-
+form {
+  padding-bottom: 50px;
+}
 .form-group {
   margin-bottom: 50px;
 }
