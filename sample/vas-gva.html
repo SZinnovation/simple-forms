@@ -123,7 +123,6 @@
     </script>
 
     <script>
-<<<<<<< Updated upstream
         var clickIt = function(e){
             $(this).removeClass('not-clicked'); 
             // necessary! Otherwise, stays transparent
@@ -133,12 +132,5 @@
         // Is it possible to add one handler for both?
         $('.not-clicked').on('touchstart', clickIt);
         $('.not-clicked').click(clickIt);
-=======
-        $('.not-clicked').click(function(e){
-        $(this).removeClass('not-clicked');
-        // necessary!
-        $(this).addClass('clicked');
-        });
->>>>>>> Stashed changes
     </script>
 </body>
