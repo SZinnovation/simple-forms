@@ -21,6 +21,16 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="vas-gva-style.css">
 
+    <style>
+        input.not-clicked::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+
+        input.clicked::-webkit-slider-thumb {
+            -webkit-appearance: sliderthumb-horizontal;
+        }
+    </style>
+
 </head>
 <body>
     <!-- This ONLY has to render nicely on a 800 x 1280 screen (for now) - our tablets -->
@@ -108,5 +118,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.not-clicked').click(function(e){
+        $(this).removeClass('not-clicked'); 
+        // necessary!
+        $(this).addClass('clicked'); 
+        });
     </script>
 </body>
