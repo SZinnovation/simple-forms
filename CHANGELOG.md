@@ -8,4 +8,4 @@ All notable changes to this project will be documented in this file. This change
 - Files from the new template.
 - Basic form generation
 
-[Unreleased]: https://github.com/your-name/simple-forms-rum/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/glass-bead-labs/simple-forms/compare/0.1.0...HEAD

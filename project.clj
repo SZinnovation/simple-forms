@@ -1,4 +1,4 @@
-(defproject simple-forms-rum "0.1.0-SNAPSHOT"
+(defproject simple-forms "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -8,6 +8,6 @@
                  [rum "0.10.8"]
                  [io.forward/yaml "1.0.6"]
                  ]
-  :main ^:skip-aot simple-forms-rum.core
+  :main ^:skip-aot simple-forms.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
