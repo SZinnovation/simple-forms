@@ -6,32 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Natsu Zemi 2017 Sample Form</title>
+    <title>湘ゼミ2017アンケート</title>
 
-    <!-- Standard Bootstrap 3 CDN: CSS and theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous"> -->
-
-    <!-- Bootstrap 3 for Japanese Websites (Honoka) -->
+    <!-- Bootstrap 3 CSS for Japanese websites (Honoka)
+         Let's get the link! -->
     <link rel="stylesheet" href="bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+
+    <!-- The standard bootstrap theme -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="vas-gva-style.css">
 
-    <style>
-        input.not-clicked::-webkit-slider-thumb {
-            -webkit-appearance: none;
-        }
-
-        input.clicked::-webkit-slider-thumb {
-            -webkit-appearance: sliderthumb-horizontal;
-            /* This is a hack to deal with the fact that the thumb is rendered transparent */
-            background: black;
-        }
-    </style>
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="simple-forms-style.css">
 
 </head>
 <body>
@@ -39,13 +28,10 @@
 
     <div class="container-fluid">
       <h1>夏ゼミ 2017 アンケート</h1>
-      <p>スライダー上をクリックして、以下の質問に回答してください。<br>回答後は送信ボタンを押してください。</p>
+      <p>スライダー上をクリックして、以下の質問に回答してください。
+          <br>回答後は送信ボタンを押してください。</p>
       <hr>
       <form method="get" action="vas-gva-thanks.html">
-          <div class="form-group form-inline">
-            <label for="sz-id" class="sz-id-label">湘ゼミID </label>
-            <input type="text" class="form-control" id="sz-id" name="sz_id">
-          </div>
 
           <!-- Dynamically generated content here -->
           <div><div>下記の質問を読み、ページ右側にある目盛りの基準を使い自己評価をしてください。それぞれの質問に回答する際、過去6ヶ月間であなたがどのように感じ、行動してきたかを最も適切に表している項目に✕を記入してください。
@@ -68,6 +54,12 @@
 </div><div class="row text-center"><div data-toggle="buttons" class="btn-group"><label for="adhd17-0" class="btn btn-primary"><input type="radio" id="adhd17-0" value="0" name="adhd17" autocomplete="off"/>全く</label><label for="adhd17-1" class="btn btn-primary"><input type="radio" id="adhd17-1" value="1" name="adhd17" autocomplete="off"/>稀に</label><label for="adhd17-2" class="btn btn-primary"><input type="radio" id="adhd17-2" value="2" name="adhd17" autocomplete="off"/>たまに</label><label for="adhd17-3" class="btn btn-primary"><input type="radio" id="adhd17-3" value="3" name="adhd17" autocomplete="off"/>しばしば</label><label for="adhd17-4" class="btn btn-primary"><input type="radio" id="adhd17-4" value="4" name="adhd17" autocomplete="off"/>頻繁に</label></div></div></div><div class="form-group"><div>みんなが何かを交代交代ですべき状況で、自分の番を待つのは耐えられないと感じたことは、どのくらいありますか？
   
 </div><div class="row text-center"><div data-toggle="buttons" class="btn-group"><label for="adhd18-0" class="btn btn-primary"><input type="radio" id="adhd18-0" value="0" name="adhd18" autocomplete="off"/>全く</label><label for="adhd18-1" class="btn btn-primary"><input type="radio" id="adhd18-1" value="1" name="adhd18" autocomplete="off"/>稀に</label><label for="adhd18-2" class="btn btn-primary"><input type="radio" id="adhd18-2" value="2" name="adhd18" autocomplete="off"/>たまに</label><label for="adhd18-3" class="btn btn-primary"><input type="radio" id="adhd18-3" value="3" name="adhd18" autocomplete="off"/>しばしば</label><label for="adhd18-4" class="btn btn-primary"><input type="radio" id="adhd18-4" value="4" name="adhd18" autocomplete="off"/>頻繁に</label></div></div></div><div class="form-group"><div>何かに忙しい人に割り込んだり、口を挟んだりすることは、どのくらいありますか？</div><div class="row text-center"><div data-toggle="buttons" class="btn-group"><label for="adhd19-0" class="btn btn-primary"><input type="radio" id="adhd19-0" value="0" name="adhd19" autocomplete="off"/>全く</label><label for="adhd19-1" class="btn btn-primary"><input type="radio" id="adhd19-1" value="1" name="adhd19" autocomplete="off"/>稀に</label><label for="adhd19-2" class="btn btn-primary"><input type="radio" id="adhd19-2" value="2" name="adhd19" autocomplete="off"/>たまに</label><label for="adhd19-3" class="btn btn-primary"><input type="radio" id="adhd19-3" value="3" name="adhd19" autocomplete="off"/>しばしば</label><label for="adhd19-4" class="btn btn-primary"><input type="radio" id="adhd19-4" value="4" name="adhd19" autocomplete="off"/>頻繁に</label></div></div></div></div>
+
+          <div class="form-group form-inline">
+            <label for="sz-id" class="sz-id-label">湘ゼミID </label>
+            <input type="number" class="form-control" id="sz-id" name="sz_id"
+                   hidespinbuttons="true">
+          </div>
 
           <button type="button submit" class="btn btn-success btn-lg btn-block">送信</button>
 

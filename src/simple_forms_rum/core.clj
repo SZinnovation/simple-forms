@@ -69,8 +69,6 @@
               choices) ) ] ]
   ))
 
-(-main "adhd")
-
 (rum/defc sz-form [items]
   "Create a form with some divs"
   ; For now, our containing form tag is in the HTML template
@@ -88,5 +86,3 @@
       (format template 
         (rum/render-static-markup form-html) ))
   ))
-
-; (-main "vas-gva")
