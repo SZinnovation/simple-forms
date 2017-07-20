@@ -13,13 +13,11 @@
 - type: instructions
   en:
     instructions: >
-      Please answer the questions below, rating yourself on each
-      of the criteria shown using the scale on the right side of the page. As
-      you answer each question, place an X in the box that best describes how
+      Please read the questions below and touch the thing that best describes how
       you have felt and conducted yourself over the past 6 months.
   jp:
-    instructions: >
-      下記の質問を読み、ページ右側にある目盛りの基準を使い自己評価をしてください。それぞれの質問に回答する際、過去6ヶ月間であなたがどのように感じ、行動してきたかを最も適切に表している項目に✕を記入してください。
+    instructions:
+      以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
 - type: heading
   id: adhd7
@@ -55,8 +53,7 @@
       the sentences of the people you are talking to, before they can finish
       them themselves?
   jp:
-    question: >
-    # Changed second 話し to 話
+    question: > # Changed second 話し to 話
       他者との会話中、ある人が話し終える直前に、自分がその人の話を乗っ取って完結させてしまうことは、どのくらいありますか？
 
 - type: likert5

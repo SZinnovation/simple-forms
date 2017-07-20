@@ -1,8 +1,8 @@
 # Our first item is metadata
 - next: vas-gva
   button:
-    jp: 送信
-    en: Submit
+    jp: 次へ進む
+    en: Continue
 
 - type: id
   id: SZ-ID

@@ -1,8 +1,8 @@
 # Our first item is metadata
 - next: adhd-b2
   button:
-    jp: 送信
-    en: Submit
+    jp: 次へ進む
+    en: Continue
 
 - type: hidden-id
   id: SZ-ID
@@ -13,13 +13,11 @@
 - type: instructions
   en:
     instructions: >
-      Please answer the questions below, rating yourself on each
-      of the criteria shown using the scale on the right side of the page. As
-      you answer each question, place an X in the box that best describes how
+      Please read the questions below and touch the thing that best describes how
       you have felt and conducted yourself over the past 6 months.
   jp:
-    instructions: >
-      下記の質問を読み、ページ右側にある目盛りの基準を使い自己評価をしてください。それぞれの質問に回答する際、過去6ヶ月間であなたがどのように感じ、行動してきたかを最も適切に表している項目に✕を記入してください。
+    instructions:
+      以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
 - type: heading
   id: adhd7

@@ -45,7 +45,7 @@
   [{id "id"
     {instructions "instructions"} sz-language}]
   "A simple div with potentially multi-line instructions"
-  [:div instructions]
+  [:div instructions [:hr]]
 )
 
 (defmethod sz-item "heading"
@@ -61,7 +61,7 @@
   "A 5-point likert scale as used in the ADHD self-report scale"
   (let [choices (
         {"en" ["Never" "Rarely" "Sometimes" "Often" "Very Often"],
-         "jp" ["全く" "稀に" "たまに" "しばしば" "頻繁に"]} sz-language)]
+         "jp" ["全くない" "めったにない" "たまにある" "よくある" "とてもよくある"]} sz-language)]
 
         ; First we create the static part of our div
         [:div {:class "form-group"} 
@@ -70,11 +70,11 @@
           [:div question]
           [:div {:class "row text-center"}
           ; and then we add our choices dynamically
-          (into [:div {:class "btn-group" :data-toggle "buttons"}]
+          (into [:div {:class "btn-group btn-group-sz" :data-toggle "buttons"}]
             (map-indexed
               (fn [num choice]
                 ; For now we're using a bootstrap style
-                [:label {:for (str id "-" num) :class "btn btn-primary"}
+                [:label {:for (str id "-" num) :class "btn btn-default"}
                   [:input {:type "radio" :id (str id "-" num) :value num :name (lower-case id) 
                             :autocomplete "off"}]
                   choice]

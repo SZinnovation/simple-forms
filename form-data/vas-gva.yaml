@@ -1,14 +1,23 @@
 # Our first item is metadata
 - next: adhd-a
   button:
-    jp: 送信
-    en: Submit
+    jp: 次へ進む
+    en: Continue
 
 - type: hidden-id
   id: SZ-ID
   # We include placeholder i18n entries to signal to the system that we thought about these contexts
   jp: {}
   en: {}
+
+- type: instructions
+  en:
+    instructions: >
+      Please touch the sliders to answer the questions below.
+      After you have completed this page, please press the continue button.
+  jp:
+    instructions: >
+      スライダーに触れて、以下の質問に回答してください。ページ内の質問へ回答した後は、次へ進むボタンを押してください。
 
 - type: vas
   id: D1
