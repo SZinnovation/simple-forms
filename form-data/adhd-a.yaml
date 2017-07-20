@@ -19,12 +19,6 @@
     instructions:
       以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
-- type: heading
-  en:
-    heading: Part A
-  jp:
-    heading: Part A
-
 - type: likert5
   id: adhd1
   en:
@@ -53,7 +47,8 @@
       How often do you have problems remembering appointments or obligations?
   jp:
     question: >
-      約束事や、やるべきことをどれくらい忘れがちですか？
+      約束事や、やるべきことを忘れることは、どれくらいありますか？
+
 
 - type: likert5
   id: adhd4

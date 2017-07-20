@@ -19,13 +19,15 @@
     instructions:
       以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
-- type: heading
-  id: adhd7
+- type: likert5
+  id: adhd14
   en:
-    heading: Part B (2/2)
+    question: >
+      How often do you feel restless or fidgety?
   jp:
-    heading: Part B (2/2)
-
+    question: >
+      落ち着かなかったり、そわそわする気持ちになることは、どれくらいありますか？
+    
 - type: likert5
   id: adhd15
   en:

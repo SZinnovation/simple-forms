@@ -1,0 +1,71 @@
+# Our first item is metadata
+- next: adhd-a
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought about these contexts
+  jp: {}
+  en: {}
+
+- type: instructions
+  en:
+    instructions: >
+      Please touch the sliders to answer the questions below.
+      After you have completed this page, please press the continue button.
+  jp:
+    instructions: >
+      スライダーに触れて、以下の質問に回答してください。ページ内の質問へ回答した後は、次へ進むボタンを押してください。
+
+- type: vas
+  id: D6
+  en:
+    question: How Nervous/tense do yo feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、緊張していますか？
+    range_labels: [全く緊張していない, とても緊張している]
+
+- type: vas
+  id: D7
+  en:
+    question: How Settled/calm do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、落ち着いていますか？
+    range_labels: [全く落ち着いていない, とても落ち着いている]
+
+- type: vas
+  id: D8
+  en:
+    question: How much of an effort is it to do anything NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、何かをする（注：どんなことでもかまいません）としたら、大変だと感じますか？
+    range_labels: [全く大変と感じない, とても大変と感じる]
+
+- type: vas
+  id: D9
+  en:
+    question: How Tired do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、疲れていますか？
+    range_labels: [全く疲れていない, とても疲れている]
+
+- type: vas
+  id: D19
+  en:
+    question: Are you satisfied with your recent work (since the last question)?
+    range_labels: [very little, very much]
+
+- type: vas
+  id: D10
+  en:
+    question: Do you think you can achieve good results NOW (since the last question)?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、（前と比べ）よりよい結果を出せると思いますか？
+    range_labels: [全くそう思わない, とてもそう思う]
