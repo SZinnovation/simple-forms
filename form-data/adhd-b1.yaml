@@ -34,7 +34,7 @@
       boring or difficult project?
   jp:
     question: >
-      退屈だったり難しかったりする問題を解かなくてはならないときに、ケアレスミスをすることが、どれくらいありますか？
+      退屈だったり難しかったりする問題を解かなくてはならないときに、ケアレスミスをすることは、どれくらいありますか？
 
 - type: likert5
   id: adhd9
@@ -43,7 +43,7 @@
       How often do you have difficulty keeping your attention when you are doing boring or repetitive work?
   jp:
     question: >
-      退屈だったり繰り返しが続いたりする問題を解かなければならないときに、集中し続けられないことがどれくらいありますか？
+      退屈だったり繰り返しが続いたりする問題を解かなければならないときに、集中し続けられないことは、どれくらいありますか？
 
 - type: likert5
   id: adhd10
@@ -53,7 +53,7 @@
       even when they are speaking to you directly?
   jp:
     question: >
-      あなたに直接話しているにも関わらず、その人の言うことに集中しづらいことがどれくらいありますか？
+      あなたに直接話しているにも関わらず、その人の言うことに集中しづらいことは、どれくらいありますか？
 
 - type: likert5
   id: adhd11
