@@ -113,5 +113,8 @@ input[type=number] {
   margin-top: 40px;
 }
 .btn-group-sz label {
-  width: 100px;
+  width: 120px;
+}
+.btn-group-sz .btn {
+  font-size: 14px;
 }
