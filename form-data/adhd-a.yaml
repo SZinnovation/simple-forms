@@ -33,7 +33,7 @@
       project, once the challenging parts have been done?
   jp:
     question: >
-      課題の一番難しい部分を終わらせたあと、残りの細かい部分の仕上げで困ったことは、どのくらいありますか？
+      課題の一番難しい部分を終わらせたあと、残りの細かい部分の仕上げで困ったことは、どれくらいありますか？
 
 
 - type: likert5
@@ -44,7 +44,7 @@
       to do a task that requires organization?
   jp:
     question: >
-      物事を整理しなければいけない状況で、その準備が難しいことは、どのくらいありますか？
+      物事を整理しなければいけない状況で、その準備が難しいことは、どれくらいありますか？
 
 - type: likert5
   id: adhd3
@@ -53,7 +53,7 @@
       How often do you have problems remembering appointments or obligations?
   jp:
     question: >
-      約束事や、やるべきことをどのくらい忘れがちですか？
+      約束事や、やるべきことをどれくらい忘れがちですか？
 
 - type: likert5
   id: adhd4

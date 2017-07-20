@@ -34,7 +34,7 @@
       time to yourself?
   jp:
     question: >
-      自分だけの時間があるときに、のびのび・リラックスしづらいなと感じることは、どのくらいありますか？
+      自分だけの時間があるときに、のびのび・リラックスしづらいなと感じることは、どれくらいありますか？
 
 - type: likert5
   id: adhd16
@@ -43,7 +43,7 @@
       How often do you find yourself talking too much when you are in social situations?
   jp:
     question: >
-      グループの中で話しすぎている自分に気づくことは、どのくらいありますか？
+      グループの中で話しすぎている自分に気づくことは、どれくらいありますか？
 
 - type: likert5
   id: adhd17
@@ -54,7 +54,7 @@
       them themselves?
   jp:
     question: > # Changed second 話し to 話
-      他者との会話中、ある人が話し終える直前に、自分がその人の話を乗っ取って完結させてしまうことは、どのくらいありますか？
+      他者との会話中、ある人が話し終える直前に、自分がその人の話を乗っ取って完結させてしまうことは、どれくらいありますか？
 
 - type: likert5
   id: adhd18
@@ -63,7 +63,7 @@
       How often do you have difficulty waiting your turn in situations when turn taking is required?
   jp:
     question: >
-      みんなが何かを交代交代ですべき状況で、自分の番を待つのは耐えられないと感じたことは、どのくらいありますか？
+      みんなが何かを交代交代ですべき状況で、自分の番を待つのは耐えられないと感じたことは、どれくらいありますか？
 
 - type: likert5
   id: adhd19
@@ -72,4 +72,4 @@
       How often do you interrupt others when they are busy?
   jp:
     question: >
-      何かに忙しい人に割り込んだり、口を挟んだりすることは、どのくらいありますか？
+      何かに忙しい人に割り込んだり、口を挟んだりすることは、どれくらいありますか？
