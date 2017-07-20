@@ -1,4 +1,4 @@
-(ns simple-forms-rum.core
+(ns simple-forms.core
   (:require [rum.core :as rum]
             [yaml.core :as yaml]
             [clojure.string :refer [lower-case]])
@@ -12,6 +12,19 @@
 ; This is a little clunky because we're not using keyword maps
 ; But we're still dispatching on type
 (defmulti sz-item #(% "type"))
+
+(defmethod sz-item "id" [{id "id", label-text sz-language}]
+  "A numeric entry field for a student identifier"
+  ; It would be nice to do anonymization immediately right here, as well as validation
+  [:div {:class "form-group form-inline"}
+        [:label {:for id :class "sz-id-label"} label-text]
+        [:input {:type "number" :class "form-control" :id id :name (lower-case id)}]
+  ] )
+
+(defmethod sz-item "hidden-id" [{id "id"}]
+  "A hidden field to auto-populate when we already know the ID somehow" 
+  [:input {:type "hidden" :name (lower-case id)}]
+  )
 
 (defmethod sz-item "vas" 
   [{id "id" 
@@ -69,18 +82,23 @@
               choices) ) ] ]
   ))
 
-(rum/defc sz-form [items]
+(rum/defc sz-form [form-data]
   "Create a form with some divs"
   ; For now, our containing form tag is in the HTML template
-  [:div ;:form
-    (keep #(if (% sz-language) (sz-item %)) items)
-  ] )
+  (let [[{submit-to "next", {button-text sz-language} "button"} & item-data] form-data]
+    [:form {:method "get" :action (format "%s.html" submit-to)}
+      ; We only render if there is an entry for our localized data. Can
+      ; represent empty with an empty map or string.
+      (keep #(if (% sz-language) (sz-item %)) item-data)
+      [:button {:type "button submit" :class "btn btn-success btn-lg btn-block"}
+        button-text]
+    ] ) )
 
 (defn -main
   "Convert a YAML specification into an HTML form"
   [form-name & args]
-  (let [form-items (yaml/from-file (format "form-data/%s.yaml" form-name))
-        form-html (sz-form form-items)
+  (let [form-data (yaml/from-file (format "form-data/%s.yaml" form-name))
+        form-html (sz-form form-data)
         template (slurp "form-data/form-template.html")]
     (spit (format "rendered/%s.html" form-name)
       (format template 

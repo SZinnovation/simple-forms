@@ -31,19 +31,8 @@
       <p>スライダー上をクリックして、以下の質問に回答してください。
           <br>回答後は送信ボタンを押してください。</p>
       <hr>
-      <form method="get" action="vas-gva-thanks.html">
-
-          <!-- Dynamically generated content here -->
+          <!-- Dynamically generated form here -->
           %s
-
-          <div class="form-group form-inline">
-            <label for="sz-id" class="sz-id-label">湘ゼミID </label>
-            <input type="number" class="form-control" id="sz-id" name="sz_id">
-          </div>
-
-          <button type="button submit" class="btn btn-success btn-lg btn-block">送信</button>
-
-      </form>
     </div>
 
     <!-- Standard jQuery 3 -->
@@ -59,6 +48,8 @@
     </script>
 
     <script>
+        /* Given appropriate CSS (see simple-forms-style.css in rendered folder),
+         * our slider thumbs are invisible until they are clicked */
         var clickIt = function(e){
             $(this).removeClass('not-clicked');
             // necessary! Otherwise, stays transparent
@@ -66,7 +57,35 @@
         }
 
         // Is it possible to add one handler for both?
-        $('.not-clicked').on('touchstart', clickIt);
-        $('.not-clicked').click(clickIt);
+        // Note also, this logic means we can implement visual changes on click
+        // for other components as well
+        
+        $(document).ready(function() {
+            $('.not-clicked').on('touchstart', clickIt);
+            $('.not-clicked').click(clickIt);
+        })
+
+        /* Get id from the URL and add it to a hidden form element if those
+         * things are both there */
+
+        // From https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var sz_id = getParameterByName('sz-id');
+
+            if(sz_id) {
+                $('input[name="sz-id"]').val(sz_id);
+            }
+        })           
+
     </script>
 </body>

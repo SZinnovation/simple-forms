@@ -1,0 +1,10 @@
+# Our first item is metadata
+- next: vas-gva
+  button:
+    jp: 送信
+    en: Submit
+
+- type: id
+  id: SZ-ID
+  jp: 湘ゼミID
+  en: Natsu Zemi ID

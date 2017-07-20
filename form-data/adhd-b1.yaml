@@ -1,0 +1,95 @@
+# Our first item is metadata
+- next: adhd-b2
+  button:
+    jp: 送信
+    en: Submit
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought about these contexts
+  jp: {}
+  en: {}
+
+- type: instructions
+  en:
+    instructions: >
+      Please answer the questions below, rating yourself on each
+      of the criteria shown using the scale on the right side of the page. As
+      you answer each question, place an X in the box that best describes how
+      you have felt and conducted yourself over the past 6 months.
+  jp:
+    instructions: >
+      下記の質問を読み、ページ右側にある目盛りの基準を使い自己評価をしてください。それぞれの質問に回答する際、過去6ヶ月間であなたがどのように感じ、行動してきたかを最も適切に表している項目に✕を記入してください。
+
+- type: heading
+  id: adhd7
+  en:
+    heading: Part B (1/2)
+  jp:
+    heading: Part B (1/2)
+
+- type: likert5
+  id: adhd8
+  en:
+    question: >
+      How often do you make careless mistakes when you have to work on a
+      boring or difficult project?
+  jp:
+    question: >
+      退屈だったり難しかったりする問題を解かなくてはならないときに、ケアレスミスをすることが、どれくらいありますか？
+
+- type: likert5
+  id: adhd9
+  en:
+    question: >
+      How often do you have difficulty keeping your attention when you are doing boring or repetitive work?  
+  jp:
+    question: >
+      退屈だったり繰り返しが続いたりする問題を解かなければならないときに、集中し続けられないことがどれくらいありますか？
+
+- type: likert5
+  id: adhd10
+  en:
+    question: >
+      How often do you have difficulty concentrating on what people say to you,
+      even when they are speaking to you directly?
+  jp:
+    question: >
+      あなたに直接話しているにも関わらず、その人の言うことに集中しづらいことがどのくらいありますか？
+
+- type: likert5
+  id: adhd11
+  en:
+    question: >
+      How often do you misplace or have difficulty finding things at home or at work?  
+  jp:
+    question: >
+      学校や自宅で物を紛失したり、なかなか発見できずに困ったりすることは、どのくらいありますか？
+
+- type: likert5
+  id: adhd12
+  en:
+    question: >
+      How often are you distracted by activity or noise around you?
+  jp:
+    question: >
+      周囲の動きや騒音で気が散ることは、どのくらいありますか？
+
+- type: likert5
+  id: adhd13
+  en:
+    question: >
+      How often do you leave your seat in meetings or other situations in
+      which you are expected to remain seated?
+  jp:
+    question: >
+      授業中など座っているべき状況のとき、どのくらいの頻度で席を立ちますか？
+
+- type: likert5
+  id: adhd14
+  en:
+    question: >
+      How often do you feel restless or fidgety?  
+  jp:
+    question: >
+      落ち着かなかったり、そわそわする気持ちになることは、どのくらいありますか？

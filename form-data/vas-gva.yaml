@@ -1,4 +1,15 @@
----
+# Our first item is metadata
+- next: adhd-a
+  button:
+    jp: 送信
+    en: Submit
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought about these contexts
+  jp: {}
+  en: {}
+
 - type: vas
   id: D1
   en:
