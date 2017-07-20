@@ -14,7 +14,7 @@
 
 
     <!-- The standard bootstrap theme -->
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous">
@@ -28,8 +28,9 @@
 
     <div class="container-fluid">
       <h1>夏ゼミ 2017 アンケート</h1>
-      <p>スライダー上をクリックして、以下の質問に回答してください。
-          <br>回答後は送信ボタンを押してください。</p>
+      <p>スライダーに触れて、以下の質問に回答してください。(for slider)
+
+          <br>ページ内の質問へ回答した後は、[次へ進む｜送信]ボタンを押してください。</p>
       <hr>
           <!-- Dynamically generated form here -->
           %s
@@ -59,7 +60,7 @@
         // Is it possible to add one handler for both?
         // Note also, this logic means we can implement visual changes on click
         // for other components as well
-        
+
         $(document).ready(function() {
             $('.not-clicked').on('touchstart', clickIt);
             $('.not-clicked').click(clickIt);
@@ -85,7 +86,7 @@
             if(sz_id) {
                 $('input[name="sz-id"]').val(sz_id);
             }
-        })           
+        })
 
     </script>
 </body>
