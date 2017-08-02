@@ -4,24 +4,26 @@ import io
 
 from setuptools import find_packages, setup
 
-name = "morepath_sqlalchemy"
+name = "sf_app"
 description = (
-    "Morepath SQLAlchemy Demo"
+    "Simple Forms Application Server"
 )
 long_description = (
-    io.open('README.rst', encoding='utf-8').read() + '\n\n' +
-    io.open('CHANGES.rst', encoding='utf-8').read())
-version = '0.2.dev0'
+    io.open('README.md', encoding='utf-8').read()
+    # + '\n\n' + io.open('CHANGES.rst', encoding='utf-8').read()
+    )
+version = '0.1.dev0'
 
 setup(
     name=name,
     version=version,
     description=description,
     long_description=long_description,
-    author='Morepath developers',
-    author_email='morepath@googlegroups.com',
-    license="BSD",
-    url="https://github.com/morepath/morepath_sqlalchemy",
+    author='Dav Clark',
+    author_email='dav@bead.glass',
+    # morepath_sqlalchemy was BSD, I elevated for now
+    license="GPL3",
+    url="https://github.com/glass-bead-labs/simple-forms",
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
@@ -40,16 +42,15 @@ setup(
     ),
     entry_points={
         'console_scripts': [
-            'morepath_sqlalchemy = morepath_sqlalchemy.run:run',
+            'sf_app = sf_app.run:run',
         ]
     },
     classifiers=[
         'Intended Audience :: Developers',
         'Environment :: Web Environment',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: GPL3 License',
         'Topic :: Internet :: WWW/HTTP :: WSGI',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        # I only guarantee this works on 3.6 for now
+        'Programming Language :: Python :: 3.6',
     ]
 )
