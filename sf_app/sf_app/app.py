@@ -2,7 +2,6 @@ from sqlalchemy.orm import sessionmaker
 from zope.sqlalchemy import register
 
 from more.transaction import TransactionApp
-from more.static import StaticApp
 from morepath.reify import reify
 from morepath.request import Request
 
@@ -17,5 +16,5 @@ class DBSessionRequest(Request):
         return Session()
 
 
-class App(StaticApp, TransactionApp):
+class App(TransactionApp):
     request_class = DBSessionRequest

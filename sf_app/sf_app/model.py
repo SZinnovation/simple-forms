@@ -5,13 +5,9 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class Root(object):
-    pass
-
-
-class Document(Base):
-    __tablename__ = 'document'
+class FormSubmission(Base):
+    __tablename__ = 'responses'
 
     id = Column(Integer, primary_key=True)
-    title = Column(Text)
-    content = Column(Text)
+    form_name = Column(Text)
+    responses = Column(Text)
