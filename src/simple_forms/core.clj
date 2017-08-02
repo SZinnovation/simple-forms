@@ -82,11 +82,13 @@
               choices) ) ] ]
   ))
 
-(rum/defc sz-form [form-data]
+(rum/defc sz-form [form-name form-data]
   "Create a form with some divs"
   ; For now, our containing form tag is in the HTML template
-  (let [[{submit-to "next", {button-text sz-language} "button"} & item-data] form-data]
-    [:form {:method "get" :action (format "%s.html" submit-to)}
+  (let [[{next-form "next", {button-text sz-language} "button"} & item-data] form-data]
+    [:form {:method "post" :action "submissions"}
+    [:input {:type "hidden" :name "form-name" :value form-name}]
+    [:input {:type "hidden" :name "next-form" :value next-form}]
       ; We only render if there is an entry for our localized data. Can
       ; represent empty with an empty map or string.
       (keep #(if (% sz-language) (sz-item %)) item-data)
@@ -98,7 +100,7 @@
   "Convert a YAML specification into an HTML form"
   [form-name & args]
   (let [form-data (yaml/from-file (format "form-data/%s.yaml" form-name))
-        form-html (sz-form form-data)
+        form-html (sz-form form-name form-data)
         template (slurp "form-data/form-template.html")]
     (spit (format "rendered/%s.html" form-name)
       (format template 
