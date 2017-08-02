@@ -1,0 +1,31 @@
+version: "3"
+services:
+    web:
+        build: nginx
+        ports:
+            # We map to port 8000, as some folks may be using Docker directly on a
+            # host already running a web server on port 80
+            - "8000:80"
+        links:
+            - morepath
+        volumes:
+            - ../site/:/var/www/html/
+
+    morepath:
+        # currently, this won't work - the Dockerfile is not set up!
+        build: ./server
+
+    # For now, we'll just use sqlite!
+    # pg:
+    #     build: postgres
+    #     ports:
+    #         - "5432:5432"
+    #     environment:
+    #         POSTGRES_PASSWORD: "harmonious measurement"
+    #         POSTGRES_DB: natsuzemi2017
+    #     volumes:
+    #         # Creates trouble unless we make it world-writable or play tricks to
+    #         # match the group or user id inside and outside the container.
+    #         # By default, some Docker magic will create an external volume
+    #         # somewhere...
+    #         - ./postgres/data:/docker-entrypoint-initdb.d
