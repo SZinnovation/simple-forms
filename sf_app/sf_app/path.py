@@ -7,6 +7,7 @@ from .model import Document, Root
 def get_root():
     return Root()
 
+@App.path(model=WebObDir, path='forms/')
 
 @App.path(model=Document, path='documents/{id}',
           converters={'id': int})

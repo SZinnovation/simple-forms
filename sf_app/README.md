@@ -1,5 +1,5 @@
-SQLAlchemy integration for Morepath
-===================================
+Simple forms web app
+====================
 
 Demonstrate SQLAlchemy integration with Morepath through more.transaction.
 
@@ -22,3 +22,4 @@ Then to run the web server::
   $ env/bin/morepath_sqlalchemy
 
 You can now access the application through http://localhost:5000
+The `-e` option for pip means we don't have to rebuild if we're running locally
