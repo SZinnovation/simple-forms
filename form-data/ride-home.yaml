@@ -1,0 +1,8 @@
+- id: M3
+  type: vas
+  en: 
+    question: How are your relationships with your team peers?
+    range_labels: [very poor, very good]
+  jp:
+    question: 同じ色のチームメイトとの関係はどうですか？
+    range_labels: [全くよくない, とても仲がよい]

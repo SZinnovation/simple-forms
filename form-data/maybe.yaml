@@ -1,0 +1,9 @@
+- next: thanks
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- id: words
+  type: short-answer
+  en: What kinds of words or stories from your teacher in the past has led to your motivation?
+  jp: 今までの中で、先生のどのような言葉や話が、やる気につながっていますか？

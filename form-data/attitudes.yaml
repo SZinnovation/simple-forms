@@ -1,0 +1,93 @@
+- next: maybe
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- id: trouble
+  type: radio
+  en:
+    question: >
+      Choose one that best describes your current condition.
+    choices:
+      - I’m now in trouble, and I can see a way to solve it.
+      - I’m now in trouble, and I cannot see a way to solve it.
+      - None of the above.
+  jp:
+    question: >
+      あなたの現在の状態を最もよく表しているものをひとつ選んでください。
+    choices:
+      - 私は今困っていて、解決方法が見えている。
+      - 私は今困っていて、解決方法が見えていない。
+      -	どちらでもない。
+
+- id: D13 
+  type: vas
+  en:
+    question: I am enjoying studying math. 
+    range_labels: [very little, very much]
+  jp:
+    question: 数学を楽しく学んでいる。
+   	range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D14 
+  type: vas
+  en:
+    question: Math is important for my future. 
+    range_labels: [very little, very much]
+  jp:
+    question: 数学は私の将来に重要である。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D15 
+  type: vas
+  en:
+    question: I am enjoying studying English. 
+    range_labels: [very little, very much]
+  jp:
+    question: 英語を楽しく学んでいる。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D16 
+  type: vas
+  en:
+    question: English important for my future. 
+    range_labels: [very little, very much]
+  jp:
+    question: 英語は私の将来に重要である。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D17 
+  type: vas
+  en:
+    question: I am enjoying studying special. 
+    range_labels: [very little, very much]
+  jp:
+    question: 特色を楽しく学んでいる。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D18 
+  type: vas
+  en:
+    question: Liberal arts are important for my future. 
+    range_labels: [very little, very much]
+  jp:
+    question: 特色は私の将来に重要である。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: P1
+  type: vas
+  en:
+    question: I am studying more for my parents (or other family) than for myself.
+    range_labels: [Strongly disagree, Strongly agree]
+  jp:
+    question: 私は、自分のためにというよりは、親や家族のために勉強している。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: P2
+  type: vas
+  en:
+    question: I study because my teachers encourage me to study.
+    range_labels: [Strongly disagree, Strongly agree]
+  jp:
+    question: 先生が私を励ましてくれるので、私は勉強している。
+    range_labels: [全くそう思わない, とてもそう思う]

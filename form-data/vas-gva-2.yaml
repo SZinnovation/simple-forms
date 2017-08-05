@@ -60,6 +60,9 @@
   en:
     question: Are you satisfied with your recent work (since the last question)?
     range_labels: [very little, very much]
+  jp:
+    question: 直近の授業や学習に満足していますか？
+    range_labels: [全く満足していない, とても満足している]
 
 - type: vas
   id: D10
