@@ -20,16 +20,16 @@
       - 私は今困っていて、解決方法が見えていない。
       -	どちらでもない。
 
-- id: D13 
+- id: D13
   type: vas
   en:
-    question: I am enjoying studying math. 
+    question: I am enjoying studying math.
     range_labels: [very little, very much]
   jp:
     question: 数学を楽しく学んでいる。
    	range_labels: [全くそう思わない, とてもそう思う]
 
-- id: D14 
+- id: D14
   type: vas
   en:
     question: Math is important for my future. 
@@ -38,7 +38,7 @@
     question: 数学は私の将来に重要である。
     range_labels: [全くそう思わない, とてもそう思う]
 
-- id: D15 
+- id: D15
   type: vas
   en:
     question: I am enjoying studying English. 
@@ -47,31 +47,49 @@
     question: 英語を楽しく学んでいる。
     range_labels: [全くそう思わない, とてもそう思う]
 
-- id: D16 
+- id: D16
   type: vas
   en:
-    question: English important for my future. 
+    question: English important for my future.
     range_labels: [very little, very much]
   jp:
     question: 英語は私の将来に重要である。
     range_labels: [全くそう思わない, とてもそう思う]
 
-- id: D17 
+- id: D17
   type: vas
   en:
-    question: I am enjoying studying special. 
+    question: I am enjoying studying liberal arts.
     range_labels: [very little, very much]
   jp:
     question: 特色を楽しく学んでいる。
     range_labels: [全くそう思わない, とてもそう思う]
 
-- id: D18 
+- id: D18
   type: vas
   en:
-    question: Liberal arts are important for my future. 
+    question: Liberal arts are important for my future.
     range_labels: [very little, very much]
   jp:
     question: 特色は私の将来に重要である。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D19
+  type: vas
+  en:
+    question: I am enjoying studying Japanese.
+    range_labels: [very little, very much]
+  jp:
+    question: 国語を楽しく学んでいる。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: D20
+  type: vas
+  en:
+    question: Japanese is important for my future.
+    range_labels: [very little, very much]
+  jp:
+    question: 国語は私の将来に重要である。
     range_labels: [全くそう思わない, とてもそう思う]
 
 - id: P1
