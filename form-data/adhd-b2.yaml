@@ -1,4 +1,3 @@
-# Our first item is metadata
 - next: attitudes
   button:
     jp: 送信
@@ -6,30 +5,29 @@
 
 - type: hidden-id
   id: SZ-ID
-  # We include placeholder i18n entries to signal to the system that we thought about these contexts
   jp: {}
   en: {}
 
 - type: instructions
   en:
     instructions: >
-      Please read the questions below and touch the thing that best describes how
-      you have felt and conducted yourself over the past 6 months.
+      Please read the questions below and touch the thing that best describes
+      how you have felt and conducted yourself over the past 6 months.
   jp:
     instructions:
       以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
 - type: likert5
-  id: adhd14
+  id: adhd13
   en:
     question: >
       How often do you feel restless or fidgety?
   jp:
     question: >
       落ち着かなかったり、そわそわする気持ちになることは、どれくらいありますか？
-    
+
 - type: likert5
-  id: adhd15
+  id: adhd14
   en:
     question: >
       How often do you have difficulty unwinding and relaxing when you have
@@ -39,16 +37,17 @@
       自分だけの時間があるときに、のびのび・リラックスしづらいなと感じることは、どれくらいありますか？
 
 - type: likert5
-  id: adhd16
+  id: adhd15
   en:
     question: >
-      How often do you find yourself talking too much when you are in social situations?
+      How often do you find yourself talking too much when you are in social
+      situations?
   jp:
     question: >
       グループの中で話しすぎている自分に気づくことは、どれくらいありますか？
 
 - type: likert5
-  id: adhd17
+  id: adhd16
   en:
     question: >
       When you’re in a conversation, how often do you find yourself finishing
@@ -59,16 +58,17 @@
       他者との会話中、ある人が話し終える直前に、自分がその人の話を乗っ取って完結させてしまうことは、どれくらいありますか？
 
 - type: likert5
-  id: adhd18
+  id: adhd17
   en:
     question: >
-      How often do you have difficulty waiting your turn in situations when turn taking is required?
+      How often do you have difficulty waiting your turn in situations when
+      turn taking is required?
   jp:
     question: >
       みんなが何かを交代交代ですべき状況で、自分の番を待つのは耐えられないと感じたことは、どれくらいありますか？
 
 - type: likert5
-  id: adhd19
+  id: adhd18
   en:
     question: >
       How often do you interrupt others when they are busy?

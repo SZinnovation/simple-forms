@@ -6,15 +6,16 @@
 
 - type: hidden-id
   id: SZ-ID
-  # We include placeholder i18n entries to signal to the system that we thought about these contexts
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
   jp: {}
   en: {}
 
 - type: instructions
   en:
     instructions: >
-      Please read the questions below and touch the thing that best describes how
-      you have felt and conducted yourself over the past 6 months.
+      Please read the questions below and touch the thing that best describes
+      how you have felt and conducted yourself over the past 6 months.
   jp:
     instructions:
       以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。

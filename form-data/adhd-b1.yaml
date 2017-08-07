@@ -1,4 +1,3 @@
-# Our first item is metadata
 - next: adhd-b2
   button:
     jp: 次へ進む
@@ -6,21 +5,20 @@
 
 - type: hidden-id
   id: SZ-ID
-  # We include placeholder i18n entries to signal to the system that we thought about these contexts
   jp: {}
   en: {}
 
 - type: instructions
   en:
     instructions: >
-      Please read the questions below and touch the thing that best describes how
-      you have felt and conducted yourself over the past 6 months.
+      Please read the questions below and touch the thing that best describes
+      how you have felt and conducted yourself over the past 6 months.
   jp:
     instructions:
       以下の質問を読み、過去6ヶ月間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
 
 - type: likert5
-  id: adhd8
+  id: adhd7
   en:
     question: >
       How often do you make careless mistakes when you have to work on a
@@ -30,16 +28,17 @@
       退屈だったり難しかったりする問題を解かなくてはならないときに、ケアレスミスをすることは、どれくらいありますか？
 
 - type: likert5
-  id: adhd9
+  id: adhd8
   en:
     question: >
-      How often do you have difficulty keeping your attention when you are doing boring or repetitive work?
+      How often do you have difficulty keeping your attention when you are
+      doing boring or repetitive work?
   jp:
     question: >
       退屈だったり繰り返しが続いたりする問題を解かなければならないときに、集中し続けられないことは、どれくらいありますか？
 
 - type: likert5
-  id: adhd10
+  id: adhd9
   en:
     question: >
       How often do you have difficulty concentrating on what people say to you,
@@ -49,16 +48,17 @@
       あなたに直接話しているにも関わらず、その人の言うことに集中しづらいことは、どれくらいありますか？
 
 - type: likert5
-  id: adhd11
+  id: adhd10
   en:
     question: >
-      How often do you misplace or have difficulty finding things at home or at work?
+      How often do you find yourself in a situation where you are having
+      difficulty locating things you have misplaced at school or at home?
   jp:
     question: >
       学校や自宅で物を紛失したり、なかなか発見できずに困ったりすることは、どれくらいありますか？
 
 - type: likert5
-  id: adhd12
+  id: adhd11
   en:
     question: >
       How often are you distracted by activity or noise around you?
@@ -67,11 +67,11 @@
       周囲の動きや騒音で気が散ることは、どれくらいありますか？
 
 - type: likert5
-  id: adhd13
+  id: adhd12
   en:
     question: >
-      How often do you leave your seat in meetings or other situations in
-      which you are expected to remain seated?
+      How often do you leave your seat during classes or in other situations
+      where you are expected to remain seated?
   jp:
     question: >
       授業中など座っているべき状況のとき、どれくらいの頻度で席を立ちますか？
