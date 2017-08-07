@@ -1,0 +1,59 @@
+- next: vas-gva-1
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- id: F1
+  type: radio
+  en:
+    question: Why did you come to Natsu Zemi?
+    choices:
+      - Suggested by my parents
+      - Suggested by my SHO-zemi school teacher
+      - My friends and I decided to join together
+      - Decided by myself
+  jp:
+    question: なぜ今回夏ゼミに来ましたか？
+    choices:
+      - おうちの人にすすめられた
+      - 教室の先生にすすめられた
+      - 友だち同士で参加しようと思った
+      - 自分から参加しようと思った
+
+- id: F2
+  type: radio
+  en:
+    question: How long have you been with SHO-zemi?
+    choices:
+      - Grade 9
+      - Grade 8
+      - Grade 7
+      - Elementary school
+  jp:
+    question: いつから湘ゼミ生ですか？
+    choices:
+      - 中３（2017年3月〜）から
+      - 中２から
+      - 中１から
+      - 小学生から
+
+- id: F3
+  # Maybe make this a horizontal radio?
+  type: radio
+  en:
+    question: >
+      Is a person you want to win against (including yourself) participating in
+      this Natsu Zemi?
+    choices: [Yes, No]
+  jp:
+    question: 自分を含めてこの人には勝ちたいと思う人は夏ゼミに来ていますか？
+    choices: [はい, いいえ]
+
+- id: F4
+  type: vas
+  en:
+    question: Are you motivated for Natsu Zemi?
+    range_labels: [Not very motivated, Very motivated]
+  jp:
+    question: 夏ゼミに対してやる気を感じていますか？
+    range_labels: [全く感じていない, とても感じている]
