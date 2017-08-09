@@ -1,3 +1,15 @@
+- next: ignored
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
+  jp: {}
+  en: {}
+
 - id: M3
   type: vas
   en: 

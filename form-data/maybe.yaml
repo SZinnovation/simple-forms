@@ -3,6 +3,13 @@
     jp: 次へ進む
     en: Continue
 
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
+  jp: {}
+  en: {}
+
 - id: words
   type: short-answer
   en: What kinds of words or stories from your teacher in the past has led to your motivation?
