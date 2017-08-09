@@ -55,5 +55,6 @@ def document_collection_add_submit(self, request):
     # should keep it JSON in the "real" system.
     record = self.add(form_name=form_name, responses=str(everything))
     sz_id = request.POST.get('sz-id')
-    next_form = request.POST.get('next-form')
+    # next_form = request.POST.get('next-form')
+    next_form = getattr(request.app.settings.next_form, form_name)
     return redirect('{}.html?sz-id={}'.format(next_form, sz_id))

@@ -32,6 +32,7 @@ setup(
         'more.transaction',
         'zope.sqlalchemy >= 0.7.4',
         'sqlalchemy >= 0.9',
+	'pyyaml',
     ],
     extras_require=dict(
         test=[
