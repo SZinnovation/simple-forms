@@ -1,0 +1,40 @@
+- next: thanks
+  button:
+    jp: 次へ進む
+    en: Continue
+
+- id: M1
+  type: vas
+  en:
+    question: How well did you sleep last night?
+    range_labels: [Very poorly, Very well]
+  jp:
+    question: 昨夜は、どのくらいよく眠れましたか？
+    range_labels: [全く眠れなかった, とてもよく寝れた]
+
+- id: M2
+  type: vas
+  en:
+    question: How well were you able to relax last evening?
+    range_labels: [Very poorly, Very well]
+  jp:
+    question: 昨夜は、どのくらいリラックスすることができましたか？
+    range_labels: [全くできなかった, とてもリラックスできた]
+
+- id: M4
+  type: vas
+  en:
+    question: How lonely do you feel right now?
+    range_labels: [Not lonely at all, Very lonely]
+  jp:
+    question: 今、どのくらい孤独でさみしい気分ですか？
+    range_labels: [全くさみしくない, とてもさみしい]
+
+- id: M5
+  type: vas
+  en:
+    question: How much would you like to go home?
+    range_labels: [Very little, Very much]
+  jp:
+    question: どのくらい家に帰りたいと思いますか？
+    range_labels: [全く帰りたいと思わない, 今すぐ帰りたい]

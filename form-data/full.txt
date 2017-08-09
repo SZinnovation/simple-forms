@@ -1,0 +1,11 @@
+id
+first-only
+morning
+adhd-a
+adhd-b1
+adhd-b2
+vas-gva-1
+vas-gva-2
+attitudes
+maybe
+ride-home

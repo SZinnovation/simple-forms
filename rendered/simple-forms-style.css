@@ -30,6 +30,10 @@ label {
   font-size: 14px;
 }
 
+.radio {
+    margin-left: 10px;
+}
+
 /* Interactive properties */
 
 input[type=range].not-clicked::-webkit-slider-thumb {

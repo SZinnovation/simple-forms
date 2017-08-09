@@ -76,11 +76,46 @@
                 ; For now we're using a bootstrap style
                 [:label {:for (str id "-" num) :class "btn btn-default"}
                   [:input {:type "radio" :id (str id "-" num) :value num :name (lower-case id) 
+                            ; autocomplete fixes "memory" for some browsers on buttons
+                            ; http://getbootstrap.com/javascript/#buttons  
                             :autocomplete "off"}]
                   choice]
               ) 
               choices) ) ] ]
   ))
+
+(defmethod sz-item "radio"
+  ; Note that radio has very similar structure to likert5 above. Combine?
+  [{id "id"
+    {question "question",
+     choices "choices"} sz-language}]
+  (into [:div question]
+    (map-indexed
+      (fn [num choice]
+        ; We're using bootstrap-style nesting of input inside label here to make it easier 
+        ; to pack single items into a mapped list
+        [:div {:class "radio"}
+          [:label {:for (str id "-" num) }
+            ; I don't think the autocomlpete issue above is relevant here
+            [:input {:type "radio" :id (str id "-" num) :value num :name (lower-case id) }]
+            choice]]
+      ) 
+      choices) ) 
+)
+
+(defmethod sz-item "short-answer"
+  [{id "id"
+    ; Here I'm using a newer style of single-bit-of-text compared to the above
+    ; (e.g., likert5 does an extra not-totally-necessary bit of unpacking)
+    question sz-language}]
+  [:div {:class "form-group"}
+    [:label {:for id } question]
+    [:br]
+    [:input {:type "text" :class "form-control" 
+             :id id :name (lower-case id) 
+             :autocomplete "off" :inputmode "kana"}]
+  ]
+)
 
 (rum/defc sz-form [form-name form-data]
   "Create a form with some divs"

@@ -18,7 +18,7 @@
     choices:
       - 私は今困っていて、解決方法が見えている。
       - 私は今困っていて、解決方法が見えていない。
-      -	どちらでもない。
+      - どちらでもない。
 
 - id: D13
   type: vas
@@ -27,12 +27,12 @@
     range_labels: [very little, very much]
   jp:
     question: 数学を楽しく学んでいる。
-   	range_labels: [全くそう思わない, とてもそう思う]
+    range_labels: [全くそう思わない, とてもそう思う]
 
 - id: D14
   type: vas
   en:
-    question: Math is important for my future. 
+    question: Math is important for my future.
     range_labels: [very little, very much]
   jp:
     question: 数学は私の将来に重要である。
@@ -41,7 +41,7 @@
 - id: D15
   type: vas
   en:
-    question: I am enjoying studying English. 
+    question: I am enjoying studying English.
     range_labels: [very little, very much]
   jp:
     question: 英語を楽しく学んでいる。

@@ -72,3 +72,12 @@
   jp:
     question: 今、（前と比べ）よりよい結果を出せると思いますか？
     range_labels: [全くそう思わない, とてもそう思う]
+
+- type: vas
+  id: D12
+  en:
+    question: Are you Motivated OVERALL?
+    range_labels: [Very little, Very much]
+  jp:
+    question: 総合的にやる気を感じていますか？
+    range_labels: [全く感じていない, とても感じている]
