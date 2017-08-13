@@ -50,7 +50,7 @@ def submissions_default(self, request):
 
 
 @App.view(model=FormSubmissions, request_method='POST')
-def document_collection_add_submit(self, request):
+def document_collection_submit(self, request):
     # In our case, this should just return a dict copy of the underlying
     # webob.MutliDict
     everything = request.POST.mixed()
@@ -62,7 +62,9 @@ def document_collection_add_submit(self, request):
 
     # While we're using sqlite, I'm just putting the JSON into a string. We
     # should keep it JSON if we switch to postgresql.
-    self.add(form_name=form_name, sz_id=sz_id, responses=str(everything))
+    self.add(session_name=request.app.settings.session_info.name,
+             sz_id=sz_id, form_name=form_name,
+             responses=json.dumps(everything))
     # next_form = request.POST.get('next-form')
 
     # This will probably be an error if form_name was missing

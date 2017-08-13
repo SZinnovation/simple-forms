@@ -14,13 +14,15 @@ class FormSubmissions(object):
         return self.db_session.query(FormSubmission).offset(self.offset)
             # .limit(self.limit)
 
-    def add(self, form_name, sz_id, responses):
+    def add(self, session_name, sz_id, form_name, responses):
         '''Add a record to our submissions
 
         Note that responses will be encoded - it should be sent in as a raw
         python dict / list / etc.'''
         session = self.db_session
-        document = FormSubmission(form_name=form_name, sz_id=sz_id, responses=json.dumps(responses))
+        document = FormSubmission(session=session_name, sz_id=sz_id,
+                                  form_name=form_name,
+                                  responses=json.dumps(responses))
         session.add(document)
         session.flush()
         return document
