@@ -64,8 +64,8 @@ def document_collection_submit(self, request):
     # should keep it JSON if we switch to postgresql.
     self.add(session_name=request.app.settings.session_info.name,
              sz_id=sz_id, form_name=form_name,
-             responses=json.dumps(everything))
-    # next_form = request.POST.get('next-form')
+             # Note - JSON encoding is done in the add method
+             responses=everything)
 
     # This will probably be an error if form_name was missing
     next_form = getattr(request.app.settings.next_form, form_name)
