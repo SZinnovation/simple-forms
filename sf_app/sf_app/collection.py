@@ -1,4 +1,5 @@
 from .model import FormSubmission
+import json
 
 # MAX_LIMIT = 20
 
@@ -13,9 +14,13 @@ class FormSubmissions(object):
         return self.db_session.query(FormSubmission).offset(self.offset)
             # .limit(self.limit)
 
-    def add(self, form_name, responses):
+    def add(self, form_name, sz_id, responses):
+        '''Add a record to our submissions
+
+        Note that responses will be encoded - it should be sent in as a raw
+        python dict / list / etc.'''
         session = self.db_session
-        document = FormSubmission(form_name=form_name, responses=responses)
+        document = FormSubmission(form_name=form_name, sz_id=sz_id, responses=json.dumps(responses))
         session.add(document)
         session.flush()
         return document

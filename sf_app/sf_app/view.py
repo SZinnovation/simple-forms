@@ -1,3 +1,5 @@
+import json
+
 from morepath import redirect
 
 from .app import App
@@ -13,8 +15,9 @@ from .model import FormSubmission
 @App.json(model=FormSubmission)
 def document_default(self, request):
     return {
+        'time': self.time.isoformat(),
         'form_name': self.form_name,
-        'submission': self.responses,
+        'submission': json.loads(self.responses),
         # This could be useful, but for now we're not linking to individuals
         # 'link': request.link(self)
     }
@@ -48,13 +51,23 @@ def submissions_default(self, request):
 
 @App.view(model=FormSubmissions, request_method='POST')
 def document_collection_add_submit(self, request):
-    form_name = request.POST.get('form-name')
-    # In our case,  this should just return a dict copy
+    # In our case, this should just return a dict copy of the underlying
+    # webob.MutliDict
     everything = request.POST.mixed()
-    # While we're prototyping, I'm just putting the JSON into a string. We
-    # should keep it JSON in the "real" system.
-    record = self.add(form_name=form_name, responses=str(everything))
-    sz_id = request.POST.get('sz-id')
+
+    # We're going to put these directly in our table, so we also remove from
+    # the dict that will be treated as JSON
+    form_name = everything.pop('form-name', 'missing')
+    sz_id = everything.pop('sz-id', 'missing')
+
+    # While we're using sqlite, I'm just putting the JSON into a string. We
+    # should keep it JSON if we switch to postgresql.
+    self.add(form_name=form_name, sz_id=sz_id, responses=str(everything))
     # next_form = request.POST.get('next-form')
+
+    # This will probably be an error if form_name was missing
     next_form = getattr(request.app.settings.next_form, form_name)
+
+    # This is a link outside the morepath app, so we just write it directly as
+    # a string
     return redirect('{}.html?sz-id={}'.format(next_form, sz_id))
