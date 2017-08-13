@@ -1,5 +1,4 @@
-- next: ignored
-  button:
+- button:
     jp: 次へ進む
     en: Continue
 

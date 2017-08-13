@@ -122,22 +122,24 @@
   ; For now, our containing form tag is in the HTML template
   (let [[{next-form "next", {button-text sz-language} "button"} & item-data] form-data]
     [:form {:method "post" :action "submissions"}
-    [:input {:type "hidden" :name "form-name" :value form-name}]
-    [:input {:type "hidden" :name "next-form" :value next-form}]
-      ; We only render if there is an entry for our localized data. Can
-      ; represent empty with an empty map or string.
-      (keep #(if (% sz-language) (sz-item %)) item-data)
-      [:button {:type "button submit" :class "btn btn-success btn-lg btn-block"}
-        button-text]
-    ] ) )
+      [:input {:type "hidden" :name "form-name" :value form-name}]
+        ; We only render if there is an entry for our localized data. Can
+        ; represent empty with an empty map or string.
+        (keep #(if (% sz-language) (sz-item %)) item-data)
+        [:button {:type "button submit" :class "btn btn-success btn-lg btn-block"}
+          button-text]
+    ]))
 
 (defn -main
   "Convert a YAML specification into an HTML form"
   [form-name & args]
-  (let [form-data (yaml/from-file (format "form-data/%s.yaml" form-name))
-        form-html (sz-form form-name form-data)
-        template (slurp "form-data/form-template.html")]
-    (spit (format "rendered/%s.html" form-name)
-      (format template 
-        (rum/render-static-markup form-html) ))
+  (let [form-data (yaml/from-file (format "form-data/%s.yaml" form-name))]
+    (if form-data
+      (let [form-component (sz-form form-name form-data)
+            form-html (rum/render-static-markup form-component)
+            template (slurp "form-data/form-template.html")
+            out-name (format "rendered/%s.html" form-name)]
+        (spit out-name (format template form-html)) 
+        (format (str "wrote " out-name)) )
+      "No form data")
   ))

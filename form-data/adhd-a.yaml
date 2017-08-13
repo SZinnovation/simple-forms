@@ -1,6 +1,5 @@
 ﻿# Our first item is metadata
-- next: adhd-b1
-  button:
+- button:
     jp: 次へ進む
     en: Continue
 

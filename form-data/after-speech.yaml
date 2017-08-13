@@ -1,0 +1,29 @@
+- button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
+  jp: {}
+  en: {}
+
+- id: S1
+  type: short-answer
+  en: What kinds of words or stories from your teacher just now lead to your motivation?
+  jp: 今の話の中で、先生のどのような言葉や話が、やる気につながっていますか？
+
+- id: S2
+  type: vas
+  en: 
+    question: Can you see the next action you need to take?
+    range_labels: [Cannot see at all, See very clearly]
+  jp: 
+    question: 次にやるべき行動が見えていますか？
+    range_labels: [全く見えていない, とても良く見えている]
+
+- id: S3
+  type: short-answer
+  en: (If you can see it) please choose/explain one with the highest priority.
+  jp: （見えているようであれば）最優先することを一つ挙げてください。

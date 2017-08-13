@@ -1,6 +1,5 @@
 # Our first item is metadata
-- next: vas-gva-1
-  button:
+- button:
     jp: 次へ進む
     en: Continue
 
