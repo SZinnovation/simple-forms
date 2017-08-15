@@ -7,3 +7,11 @@
   id: SZ-ID
   jp: 湘ゼミID
   en: Natsu Zemi ID
+
+- id: team
+  type: radio
+  en:
+    question: Which team are you on?
+    choices:
+      - Red
+      - Pink
