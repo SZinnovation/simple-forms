@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>湘ゼミ2017アンケート</title>
+
+    <!-- Bootstrap 3 CSS for Japanese websites (Honoka)
+         Let's get the link! -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+
+    <!-- The standard bootstrap theme -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="simple-forms-style.css">
+
+</head>
+<body>
+    <!-- This ONLY has to render nicely on a 800 x 1280 screen (for now) - our tablets -->
+
+    <div class="container-fluid">
+      <h1>夏ゼミ 2017 アンケート</h1>
+
+      <!-- Dynamically generated form here -->
+      <form method="post" action="submissions"><input type="hidden" name="form-name" value="assent"/><div><div><p>この度、湘南ゼミナールでは、授業の質をさらに向上させるべく、みなさんに記入いただくアンケートや成績等の情報を、外部研究機関に提供のうえ研究を進めることになりました。</p>
+
+<p>湘南ゼミナールは、常に時代の一歩先を見据えながら、生徒のみなさんにより良い教育を提供することを目指しています。みなさんのご理解・ご協力のほど、よろしくお願いいたします。質問や懸念点がありましたら、あなたもしくはあなたの保護者の方が研究チームのメンバーないし個人情報保護窓口に問合せをすることができます。</p>
+
+<p>あなたの情報が研究のために利用されることを拒否することができます。その場合、私たちがタブレットを使っている間は静かに着席し、他のことをしないでください。</p>
+</div><hr/></div><div class="checkbox"><label for="assent"><input type="checkbox" id="assent" value="assent" name="assent"/>情報を当該調査・研究のために提供することに同意します。</label></div><button type="button submit" class="btn btn-success btn-lg btn-block">次へ進む</button></form>
+
+    </div>
+
+    <!-- Standard jQuery 3 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Standard Bootstrap 3 CDN: CSS and theme -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+        /* Given appropriate CSS (see simple-forms-style.css in rendered folder),
+         * our slider thumbs are invisible until they are clicked */
+        var clickIt = function(e){
+            $(this).removeClass('not-clicked');
+            // necessary! Otherwise, stays transparent
+            $(this).addClass('clicked');
+        }
+
+        // Is it possible to add one handler for both?
+        // Note also, this logic means we can implement visual changes on click
+        // for other components as well
+        
+        $(document).ready(function() {
+            $('.not-clicked').on('touchstart', clickIt);
+            $('.not-clicked').click(clickIt);
+        })
+
+        /* Get id from the URL and add it to a hidden form element if those
+         * things are both there */
+
+        // From https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var sz_id = getParameterByName('sz-id');
+
+            if(sz_id) {
+                $('input[name="sz-id"]').val(sz_id);
+            }
+        })           
+
+    </script>
+</body>

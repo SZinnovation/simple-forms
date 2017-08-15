@@ -45,7 +45,8 @@
   [{id "id"
     {instructions "instructions"} sz-language}]
   "A simple div with potentially multi-line instructions"
-  [:div instructions [:hr]]
+  ; XXX This is a nasty hack. Do something different!
+  [:div [:div { :dangerouslySetInnerHTML {:__html instructions }}] [:hr]]
 )
 
 (defmethod sz-item "heading"
@@ -101,6 +102,15 @@
             choice]]
       ) 
       choices) ) 
+)
+
+(defmethod sz-item "checkbox"
+  [{id "id"
+    text sz-language}]
+  [:div {:class "checkbox"}
+    [:label {:for id }
+      [:input {:type "checkbox" :id id :value id :name (lower-case id)}]
+      text] ]
 )
 
 (defmethod sz-item "short-answer"
