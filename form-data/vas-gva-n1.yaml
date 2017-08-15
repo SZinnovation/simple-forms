@@ -1,0 +1,73 @@
+- button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought about these contexts
+  jp: {}
+  en: {}
+
+- type: instructions
+  en:
+    instructions: >
+      Please touch the sliders to answer the questions below.
+      After you have completed this page, please press the continue button.
+  jp:
+    instructions: >
+      スライダーに触れて、以下の質問に回答してください。ページ内の質問へ回答した後は、次へ進むボタンを押してください。
+
+- type: vas
+  id: D1
+  en:
+    question: How Clear-headed do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、意識がはっきりしていますか？
+    range_labels: [全くはっきりしていない, とてもはっきりしている]
+
+- type: vas
+  id: D2
+  en:
+    question: Is you Brain working smoothly NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、頭の回転がスムーズですか？
+    range_labels: [全くスムーズでない, とてもスムーズである]
+
+- type: vas
+  id: D3
+  en:
+    question: How Sleepy do yo feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、眠いですか？
+    range_labels: [全く眠くない, とても眠い]
+
+- type: vas
+  id: D4
+  en:
+    question: How Happy do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、幸せですか？
+    range_labels: [全く幸せでない, とても幸せである]
+
+- type: vas
+  id: D5
+  en:
+    question: How Sad do you feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、悲しいですか？
+    range_labels: [全く悲しくない, とても悲しい]
+
+- type: vas
+  id: D6
+  en:
+    question: How Nervous/tense do yo feel NOW?
+    range_labels: [very little, very much]
+  jp:
+    question: 今、緊張していますか？
+    range_labels: [全く緊張していない, とても緊張している]
+

@@ -40,7 +40,7 @@
   type: vas
   en:
     question: How much would you like to go home?
-    range_labels: [Very little, Very much]
+    range_labels: [I want to stay at Natsu Zemi, I want to go home right now]
   jp:
     question: どのくらい家に帰りたいと思いますか？
     range_labels: [全く帰りたいと思わない, 今すぐ帰りたい]
