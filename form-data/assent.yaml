@@ -1,6 +1,13 @@
 - button:
-    jp: 次へ進む
-    en: Continue
+    en: >
+      I grant permission to provide information for the purpose of carrying out
+      studies and research.
+    jp: 情報を当該調査・研究のために提供することに同意します。
+
+- type: hidden-id
+  id: SZ-ID
+  jp: {}
+  en: {}
 
 - type: instructions
   en: 
@@ -27,10 +34,3 @@
       <p>湘南ゼミナールは、常に時代の一歩先を見据えながら、生徒のみなさんにより良い教育を提供することを目指しています。みなさんのご理解・ご協力のほど、よろしくお願いいたします。質問や懸念点がありましたら、あなたもしくはあなたの保護者の方が研究チームのメンバーないし個人情報保護窓口に問合せをすることができます。</p>
 
       <p>あなたの情報が研究のために利用されることを拒否することができます。その場合、私たちがタブレットを使っている間は静かに着席し、他のことをしないでください。</p>
-
-- id: assent
-  type: checkbox
-  en: >
-    I grant permission to provide information for the purpose of carrying out
-    studies and research.
-  jp: 情報を当該調査・研究のために提供することに同意します。
