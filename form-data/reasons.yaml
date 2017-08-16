@@ -1,0 +1,36 @@
+- button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
+  jp: {}
+  en: {}
+
+- id: P0
+  type: vas
+  en:
+    question: I am studying for myself.
+    range_labels: [Strongly disagree, Strongly agree]
+  jp:
+    question: 私は、自分のために勉強している。
+    range_labels: [全くそう思わない, とてもそう思う]
+- id: P1
+  type: vas
+  en:
+    question: I am studying more for my parents (or other family) than for myself.
+    range_labels: [Strongly disagree, Strongly agree]
+  jp:
+    question: 私は、自分のためにというよりは、親や家族のために勉強している。
+    range_labels: [全くそう思わない, とてもそう思う]
+
+- id: P2
+  type: vas
+  en:
+    question: I am studying because my teachers encourage me to study.
+    range_labels: [Strongly disagree, Strongly agree]
+  jp:
+    question: 先生が私を励ましてくれるので、私は勉強している。
+    range_labels: [全くそう思わない, とてもそう思う]
