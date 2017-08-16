@@ -15,3 +15,8 @@
     choices:
       - Red
       - Pink
+  jp:
+    question: あなたのチームは？
+    choices:
+      - Red
+      - Pink
