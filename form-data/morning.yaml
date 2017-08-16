@@ -43,4 +43,4 @@
     range_labels: [I want to stay at Natsu Zemi, I want to go home right now]
   jp:
     question: どのくらい家に帰りたいと思いますか？
-    range_labels: [全く帰りたいと思わない, 今すぐ帰りたい]
+    range_labels: [夏ゼミに居たい, 今すぐ帰りたい]
