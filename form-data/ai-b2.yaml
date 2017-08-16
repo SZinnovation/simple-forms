@@ -1,7 +1,7 @@
 - next: attitudes
   button:
-    jp: 送信
-    en: Submit
+    jp: 次へ進む
+    en: Continue
 
 - type: hidden-id
   id: SZ-ID
