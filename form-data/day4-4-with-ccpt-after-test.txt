@@ -1,7 +1,7 @@
 index
 vas-gva-n1
 vas-gva-n2
-ai-a
-ai-b1
-ai-b2
+ai-a-nz
+ai-b1-nz
+ai-b2-nz
 thanks

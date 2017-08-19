@@ -1,5 +1,4 @@
 index
-after-speech
 vas-gva-n1
 vas-gva-n2
 thanks

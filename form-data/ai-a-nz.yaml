@@ -1,0 +1,82 @@
+﻿# Our first item is metadata
+- button:
+    jp: 次へ進む
+    en: Continue
+
+- type: hidden-id
+  id: SZ-ID
+  # We include placeholder i18n entries to signal to the system that we thought
+  # about these contexts
+  jp: {}
+  en: {}
+
+- type: instructions
+  en:
+    instructions: >
+      Please read the questions below and touch the thing that best describes
+      how you have felt and conducted yourself over the last 4 days at Natsu
+      Zemi.
+  jp:
+    instructions:
+      以下の質問を読み、夏ゼミでの4日間であなたがどのように感じ、行動してきたかを最もふさわしく表しているものに触れてください。
+
+- type: likert5
+  id: adhd1
+  en:
+    question: >
+      How often do you have trouble wrapping up the final details of a
+      project, once the challenging parts have been done?
+  jp:
+    question: >
+      課題の一番難しい部分を終わらせたあと、残りの細かい部分の仕上げで困ったことは、どれくらいありますか？
+
+
+- type: likert5
+  id: adhd2
+  en:
+    question: >
+      How often do you have difficulty getting things in order when you have
+      to do a task that requires organization?
+  jp:
+    question: >
+      物事を整理しなければいけない状況で、その準備が難しいことは、どれくらいありますか？
+
+- type: likert5
+  id: adhd3
+  en:
+    question: >
+      How often do you have problems remembering appointments or obligations?
+  jp:
+    question: >
+      約束事や、やるべきことを忘れることは、どれくらいありますか？
+
+
+- type: likert5
+  id: adhd4
+  en:
+    question: >
+      When you have a task that requires a lot of thought, how often do you
+      avoid or delay getting started?
+  jp:
+    question: >
+      考えなければならないことが沢山あるタスクに対して、開始を避けたり遅らせたりすることは、どれくらいありますか？
+
+- type: likert5
+  id: adhd5
+  en:
+    question: >
+      How often do you fidget or squirm with your hands or feet when you have
+      to sit down for a long time?
+  jp:
+    question: >
+      長時間座っていなければならないときに、手足をそわそわ・モジモジと動かすことは、どれくらいありますか？
+
+- type: likert5
+  id: adhd6
+  en:
+    question: >
+      How often do you feel overly active and compelled to do things, like
+      you were driven by a motor?
+  jp:
+    question: >
+      過度に活動的になったり、何かを強いられたりしているように感じることは、どれくらいありますか？
